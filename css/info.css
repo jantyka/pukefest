@@ -10,12 +10,111 @@
 	margin-bottom: 2rem;
 }
 
+form{
+	margin-bottom: 5rem;
+	width: 66.666%;
+}
+
+.container_head{
+	background-color: #000;
+	padding: 1rem 2rem;
+	color: #fff;
+}
+
+.container_head p{
+	width: 80%;
+	line-height: 1.5rem;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  input[type="reset"] {
+    background-color: #f44336;
+  }
+
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    opacity: 0.9;
+  }
+
+input[type=email],
+textarea, 
+label{
+	width: 100%;
+	display: inline-block;
+	border: .3rem solid #000;
+	outline: none;
+	padding: .5rem 1rem;
+	background-color: #000;
+	color: #fff;
+}
+
+label:nth-of-type(1){
+	margin-top: .3rem;
+}
+
+input[type=submit], 
+input[type=reset] {
+	float: left;
+	margin: .3rem .3rem 0 0;
+	padding: .5rem;
+	background-color: #000;
+	font-family: "Sweet-Scream";
+	color: #fff;
+	font-size: 1.5rem;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+
+input[type=submit]{
+	width: calc(70% - .3rem);
+}
+
+input[type=reset]{
+	width: calc(30% - .3rem);
+}
+
+input[type=submit]:hover,input[type=reset]:hover{
+	opacity: .8;
+	transform: scale(1.02, 1.02);
+}
+
+textarea{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
 .eachQ_A{
 	position: relative;
 	width: 100%;
+	display: flex;
+    flex-direction: column; /* Inhalte werden untereinander gestapelt */
+    gap: 16px; /* Abstand zwischen den Elementen */
+    padding: 16px;
 }
 
 .singleQ h2{
+	display: flex;
+    flex-direction: column; /* Formularelemente untereinander */
+    gap: 12px; /* Abstand zwischen den Eingabefeldern */
 	margin: 0;
 	text-align: center;
 }
@@ -91,3 +190,15 @@
 	background-image: url("../img/sponsors/logo_punkrockers_radio.png");
 	height: calc(11.75rem - .5rem);}
 
+	@media (max-width: 768px) {
+		/* Zusätzliche Optimierungen für kleine Bildschirme */
+		.eachQ_A {
+		  padding: 8px;
+		}
+	
+		input[type="submit"],
+		input[type="reset"] {
+		  font-size: 14px;
+		  padding: 8px;
+		}
+	  }
