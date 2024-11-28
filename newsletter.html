@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Puke Fest</title>
+    <link href="css/newsletter.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="img/logo_p_64x64.png" type="image/x-icon" />
+    <link
+      href="css/bootstrap-icons-1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    Seitenanfang bearbeiten
+    <main id="wrapper" class="primaryColor">
+      <header>
+        <div class="header_logo">
+          <a href="index.html" title="zur Startseite">
+            <img
+              alt="Puke Fest Logo"
+              src="img/logo_S.png"
+              width="155"
+              height="105"
+            />
+          </a>
+        </div>
+
+        <div class="nav" id="burger_menu">
+          <a href="lineup.html"><i class="bi bi-hand-index-fill"></i>Line up</a
+          ><br />
+          <a href="info.html"><i class="bi bi-hand-index-fill"></i>Info</a
+          ><br />
+          <a href="newsletter.html"
+            ><i class="bi bi-hand-index-fill"></i>News</a
+          >
+        </div>
+      </header>
+
+      <section class="news_section">
+        <h1>Newsletter</h1>
+        <form method="post" action="http://10.10.9.167/formview.php">
+          <div class="container_head">
+            <h2>Trage dich für den Newsletter ein</h2>
+            <p>
+              Wir nutzen deine E-Mail-Adresse, um dir alle 3 Monate den
+              Newsletter für das Puke Fest zuzusenden
+            </p>
+          </div>
+
+          <label for="news_adresse">Bitte gib deine Email Adresse an</label>
+          <input
+            id="news_adresse"
+            type="email"
+            placeholder="Deine Email Adresse..."
+            name="Newsletter Email"
+            required
+          />
+          <input type="submit" value="Anmelden" />
+          <input type="reset" name="Nicht senden" value="Doch nicht" />
+        </form>
+
+        <form action="action_page.php">
+          <div class="container_head">
+            <h2>Oder schreibe uns eine Mail...</h2>
+          </div>
+
+          <label for="name">Bitte gib deinen Namen an</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Dein Name..."
+            required
+          />
+
+          <label for="subject">Was möchtest du uns schreiben?</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Dein Text..."
+            style="height: 200px; font-size: 12px"
+            required
+          ></textarea>
+
+          <input type="submit" value="Absenden" />
+          <input type="reset" name="Nicht senden" value="Doch nicht" />
+        </form>
+      </section>
+
+      <div id="tickets">
+        <a href="https://greenhell.de" target="_blank" rel="noreferrer"
+          >Tickets</a
+        >
+      </div>
+
+      <audio id="myAudio" loop>
+        <source src="audio/ramones_judy_isa_punk.mp3" type="audio/mpeg" />
+        Dein Browser unterstützt das Audio Element nicht.
+      </audio>
+      <a id="playButton"><i class="bi bi-cassette-fill"></i></a>
+
+      <a href="#top" id="scrollToTop"
+        ><i class="bi bi-hand-thumbs-up-fill"></i>up</a
+      >
+
+      <footer>
+        <div class="footer_impressum">
+          <a href="impressum.html#impressum">Impressum</a>
+          <a href="impressum.html#agb">AGB</a>
+          <a href="impressum.html#datenschutz">Datenschutz</a>
+        </div>
+        <div class="footer_icons">
+          <a
+            href="https://www.instagram.com/pukefest2024/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/pukefest/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+        </div>
+      </footer>
+    </main>
+    <script src="js/audio.js"></script>
+    <script src="js/scrollToTop.js"></script>
+  </body>
+</html>

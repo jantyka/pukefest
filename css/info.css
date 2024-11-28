@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+#allQ_As, .sponsors{
+	display:flex;
+	justify-content: center;
+	gap: .5rem;
+	width: 75%;
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
+}
+
+.eachQ_A{
+	position: relative;
+	width: 100%;
+}
+
+.singleQ h2{
+	margin: 0;
+	text-align: center;
+}
+
+.singleQ h2:hover{
+	transform: scale(1.1, 1.1);
+}
+
+.singleQ{
+	padding: 1rem;
+	background-color: #000;
+	color: #fff;			
+	cursor: pointer;
+}
+
+.singleA{
+	position: absolute;
+	z-index: 10;
+	background-color: #fff;
+	margin: 0;
+	width: 100%;
+	padding: 1rem;
+	display: inline-block;
+	border: .3rem solid #000;
+	hyphens: auto;
+	text-align: justify;
+	column-count: 2;
+	column-gap: 2rem;
+	display: none;
+	
+}
+
+.singleA a{
+	font-weight: bold;
+	text-decoration: none;
+	color: #b61f0a;
+}
+
+.sponsor_h{
+	padding: 1rem;
+}
+
+.sponsors a{
+	display: block;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: calc(11.666rem - .5rem);
+	height: calc(4.6rem - .5rem);
+	margin: 0 .25rem;
+}
+
+.sponsors a:hover{
+	opacity: .8;
+}
+
+.sponsors a:nth-of-type(1){
+	background-image: url("../img/sponsors/logo_muenster_kulturamt.png");}
+.sponsors a:nth-of-type(2){
+	background-image: url("../img/sponsors/logo_monster_zero.avif");}
+.sponsors a:nth-of-type(3){
+	background-image: url("../img/sponsors/logo_sputnikhalle.png");}
+.sponsors a:nth-of-type(4){
+	background-image: url("../img/sponsors/logo_hostel_tom_polly.png");}
+
+.sponsors a:nth-of-type(5){
+	background-image: url("../img/sponsors/logo_rareguitar.jpeg");
+	height: calc(11.75rem - .5rem);}
+.sponsors a:nth-of-type(6){
+	background-image: url("../img/sponsors/logo_greenhell.jpeg");	
+	height: calc(11.75rem - .5rem);}
+.sponsors a:nth-of-type(7){
+	background-image: url("../img/sponsors/logo_punkrockers_radio.png");
+	height: calc(11.75rem - .5rem);}
+

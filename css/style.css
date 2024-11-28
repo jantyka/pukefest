@@ -1,0 +1,270 @@
+@charset "utf-8";
+@font-face{
+	font-family: "Roboto";
+  	font-style: normal;
+  	font-weight: 400;	
+	src: url("../fonts/Roboto-Regular.ttf");}
+@font-face{
+	font-family: "Roboto";
+  	font-style: italic;
+  	font-weight: 400;	
+	src: url("../fonts/Roboto-Italic.ttf");}
+@font-face{
+	font-family: "Roboto";
+  	font-style: normal;
+  	font-weight: 500;	
+	src: url("../fonts/Roboto-Medium.ttf");}
+@font-face{
+	font-family: "Roboto";
+  	font-style: italic;
+  	font-weight: 500;	
+	src: url("../fonts/Roboto-MediumItalic.ttf");}
+@font-face{
+	font-family: "Roboto";
+  	font-style: normal;
+  	font-weight: 900;	
+	src: url("../fonts/Roboto-Black.ttf");}
+@font-face{
+	font-family: "Roboto";
+  	font-style: italic;
+  	font-weight: 900;	
+	src: url("../fonts/Roboto-BlackItalic.ttf");}
+@font-face{
+	font-family: "Sweet-Scream";
+	src: url("../fonts/Sweet-Scream-Free.ttf");}
+/* CSS Document */
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #000;
+	font-family: 'Roboto', sans-serif;
+	margin: auto;
+}
+
+/*-------------------- whole site ------------------------*/
+
+#wrapper{
+	max-width: 100%;
+	padding: 2rem 2rem 0 2rem;
+}
+
+.primaryColor{
+ 	background-color: #b61f0a;
+}
+
+.secondaryColor{
+ 	background-color: #ffee00;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: #fff;
+	font-family:  "Sweet-Scream";
+	font-size: 3rem;
+    text-decoration: none;
+	text-align: center;
+	line-height: 2.5rem;
+    display: none;
+}
+
+#scrollToTop .bi.bi-hand-thumbs-up-fill{
+	font-size: 2rem;
+}
+
+#scrollToTop.show {
+    display: block;
+	width: 3rem;
+}
+
+/*--------------------- header -------------------------*/
+
+header{
+	position: relative;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.header_logo,
+.nav{
+	width: calc(16.666% - 2.5rem);
+	height: auto;
+}
+
+.header_logo:hover{
+	transform: scale(1.1, 1.1);
+}
+
+.nav{
+	position: absolute;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;	
+	align-items: flex-start;
+	white-space: nowrap;
+}
+
+.nav a{
+	position: relative;
+	font-family: "Sweet-Scream";
+	font-size: 1.9rem;
+	font-weight: 900;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .08rem;
+	color: #fff;
+	transition: font-size 0.5s;
+}
+
+.nav a:hover{
+	font-size: 2.5rem;
+	color: #ffee00;
+}
+
+.nav a i {
+	display: none;
+    position: absolute;
+    left: -3rem;
+	transform: rotate(90deg);
+    transition: display .5s;
+}
+
+.nav a:hover i {
+    display: inline-block;
+}
+
+/*---------------------- content --------------------------*/
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+section h1{
+	margin: 0;
+	margin-bottom: 1rem;
+	padding: 0;
+	text-align: center;
+	font-family: "Sweet-Scream";
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+
+/*---------------------- content Extra Gimmicks --------------------------*/
+
+#tickets{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-image: url("../img/button.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: auto;
+		height: 9rem;
+		padding: 1rem 2rem;
+		position: absolute;
+		top: 40%;
+		right: 3%;
+		transform: rotate(15deg);
+		z-index: 50;
+}
+			
+#tickets a{
+		padding: 1.5rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: "Sweet-Scream";
+		font-size: 2.5rem;
+		letter-spacing: .06rem;
+		color: #fff;
+}
+
+#tickets:hover{
+		background-image: url("../img/button_hover.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: auto;
+		height: 9rem;
+		padding: 1rem 2rem;
+		position: absolute;
+		top: 40%;
+		right: 3%;
+		transform: rotate(15deg) scale(120%,120%);
+}
+
+a#playButton{
+	position: relative;
+	display: inline-block;
+	width: 3rem;
+	height: 3rem;
+	font-size: 2.5rem;
+  	text-align: center;
+	cursor: pointer;
+	transition: font-size;
+	z-index: 100;
+}
+
+a#playButton:hover{
+	font-size: 3rem;	
+}
+
+a#playButton i{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*----------------------- footer ---------------------------*/
+
+footer, footer a{
+	margin: 0;
+}
+
+footer{
+	clear: both;
+	display: flex;
+	justify-content: space-between;
+	height: 3rem;
+	line-height: 3rem;
+}
+
+footer div{
+	display: flex;
+	width: 33.333%;
+	gap: 2rem;
+}
+
+footer a{
+	font-weight: 500;
+	letter-spacing: .05rem;
+	text-decoration: none;
+	color: #000;
+}
+
+.footer_icons{
+	justify-content: flex-end;
+	font-size: 1.5rem;
+	gap:1rem;
+}
+
+footer a:hover,
+.footer_icons:hover{
+	color: #fff;
+}
+
+/*-------------------- @media queries ------------------------*/
+

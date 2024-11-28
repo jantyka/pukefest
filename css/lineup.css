@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+#allBands, .buttons{
+	display:flex;
+	justify-content: center;
+	gap: 1rem;
+	width: 75%;
+	flex-wrap: wrap;
+	margin-bottom: 4rem;
+}
+
+#allBands a{
+	display: block;
+	width: 11.666rem;
+	height: 11.75rem;
+	text-decoration: none;
+	background-position: center;
+	background-size: cover;
+	border: 1rem solid rgba(32,119,149,1);
+	border-radius: 4% 96% 5% 95% / 86% 7% 93% 14%;
+	-webkit-box-shadow: .5rem .5rem .5rem 0px #000000, .5rem .5rem 1.5rem .5rem rgba(0,0,0,0); 
+	box-shadow: .5rem .5rem .5rem 0px #000000, .5rem .5rem 1.5rem .5rem rgba(0,0,0,0);
+	transform: rotate(-3deg);
+	transition: transform .5s;
+	color: #fff;
+	text-align: center;
+}
+
+#allBands a:hover{
+	transform: rotate(0);
+}
+
+#allBands a:hover{
+	transform: rotate(0);
+}
+
+#allBands a:nth-of-type(2n){
+	border-radius: 8% 92% 12% 88% / 94% 5% 95% 6%;
+}
+
+#allBands a:nth-of-type(1){
+	background-image: linear-gradient(to top, rgba(32,119,149,.5) 5%, rgba(32,119,149,0) 100%), url("../img/bands/Psychotic-Youth-2022Photo-by-Roine-Lundstrom.jpg");}
+#allBands a:nth-of-type(2){
+	background-image: linear-gradient(to top, rgba(32,119,149,.5) 5%, rgba(32,119,149,0) 100%), url("../img/bands/andreas_manges.jpg");}
+#allBands a:nth-of-type(3){
+	background-image: linear-gradient(to top, rgba(32,119,149,.5) 5%, rgba(32,119,149,0) 100%), url("../img/bands/20_belows.jpg");}
+#allBands a:nth-of-type(4){
+	background-image: linear-gradient(to top, rgba(32,119,149,.5) 5%, rgba(32,119,149,0) 100%), url("../img/bands/priceduifkes.jpg");}
+#allBands a:nth-of-type(5){
+	background-image: linear-gradient(to top, rgba(32,119,149,.5) 5%, rgba(32,119,149,0) 100%), url("../img/bands/protonPacks.jpg");}
+#allBands a:nth-of-type(6){
+	background-image: linear-gradient(to top, rgba(32,119,149,.5) 5%, rgba(32,119,149,0) 100%), url("../img/bands/band1.jpeg");}
+#allBands a:nth-of-type(7){
+	background-image: linear-gradient(to top, rgba(32,119,149,.5) 5%, rgba(32,119,149,0) 100%), url("../img/bands/pigeon_boys.jpg");}
+#allBands a:nth-of-type(8){
+	background-image: linear-gradient(to top, rgba(32,119,149,.5) 5%, rgba(32,119,149,0) 100%), url("../img/bands/lovebites.jpg");}
+
+#allBands h2, #allBands h3{
+	margin: 0;
+}
+
+#allBands h2{
+	padding-top: 50%;
+	font-size: 130%;
+}
+
+#allBands h3{
+	font-size: 100%;
+}
+
+
+
+button{
+	width: calc(25% - .5rem);
+	gap: .5rem;
+	padding: 1rem;
+	background-color: #000;
+	background-color: #000;
+	color: #fff;	
+	font-weight: 700;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+
+button:hover{
+	opacity: .8;
+	transform: scale(1.02, 1.02);
+}
